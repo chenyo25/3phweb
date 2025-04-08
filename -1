@@ -1,0 +1,77 @@
+import { Button } from "@/components/ui/button";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+} from "@/components/ui/navigation-menu";
+import React from "react";
+
+export default function Element() {
+  // Navigation menu items data
+  const navItems = [
+    { text: "加盟合作", href: "#" },
+    { text: "關於我們", href: "#" },
+    { text: "技術與設備", href: "#" },
+    { text: "合作與方案", href: "#" },
+    { text: "最新消息＆部落格", href: "#" },
+    { text: "常見問題", href: "#" },
+  ];
+
+  return (
+    <div className="bg-white flex flex-row justify-center w-full">
+      <div className="bg-white w-full max-w-[1440px] h-[810px] relative">
+        {/* Background image */}
+        <img
+          className="absolute w-full h-[810px] top-0 left-0 object-cover"
+          alt="Car wash automation background"
+          src=""
+        />
+
+        {/* Navigation bar */}
+        <header className="flex w-full h-[70px] items-center justify-between px-16 py-8 fixed top-0 left-0 bg-[#1d1d1d08] backdrop-blur-[6px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(6px)_brightness(100%)] z-10">
+          {/* Logo */}
+          <div className="relative w-[122.83px] h-[41px]">
+            <h1 className="text-2xl font-bold">3PH</h1>
+          </div>
+
+          {/* Navigation items */}
+          <div className="flex items-center gap-8">
+            <NavigationMenu>
+              <NavigationMenuList className="flex gap-[90px]">
+                {navItems.map((item, index) => (
+                  <NavigationMenuItem key={index}>
+                    <NavigationMenuLink
+                      href={item.href}
+                      className="text-[#1d1d1d] text-[length:var(--label-font-size)] font-label font-[number:var(--label-font-weight)] tracking-[var(--label-letter-spacing)] leading-[var(--label-line-height)] [font-style:var(--label-font-style)]"
+                    >
+                      {item.text}
+                    </NavigationMenuLink>
+                  </NavigationMenuItem>
+                ))}
+              </NavigationMenuList>
+            </NavigationMenu>
+
+            {/* Contact us button */}
+            <Button
+              variant="default"
+              className="bg-[#1d1d1d] text-white rounded-lg shadow-[0px_4px_12px_#00000033] text-[length:var(--button-font-size)] font-button font-[number:var(--button-font-weight)] tracking-[var(--button-letter-spacing)] leading-[var(--button-line-height)] [font-style:var(--button-font-style)]"
+            >
+              聯絡我們
+            </Button>
+          </div>
+        </header>
+
+        {/* Hero content */}
+        <div className="absolute bottom-32 left-12 text-white">
+          <h2 className="text-4xl font-bold mb-4">
+            洗車產業新時代：數位與自動化的崛起
+          </h2>
+          <p className="max-w-2xl text-lg">
+            隨著人力成本上升、消費者對高效洗車的需求增加、但統洗車模式正面臨挑戰。自動化與數字化成為市場主流趨勢，洗車業者需要透過設備升級與數位化管理來提升競爭力。
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
