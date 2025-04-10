@@ -1,77 +1,119 @@
-import { Button } from "@/components/ui/button";
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-} from "@/components/ui/navigation-menu";
-import React from "react";
-
-export default function Element() {
-  // Navigation menu items data
-  const navItems = [
-    { text: "加盟合作", href: "#" },
-    { text: "關於我們", href: "#" },
-    { text: "技術與設備", href: "#" },
-    { text: "合作與方案", href: "#" },
-    { text: "最新消息＆部落格", href: "#" },
-    { text: "常見問題", href: "#" },
-  ];
-
-  return (
-    <div className="bg-white flex flex-row justify-center w-full">
-      <div className="bg-white w-full max-w-[1440px] h-[810px] relative">
-        {/* Background image */}
-        <img
-          className="absolute w-full h-[810px] top-0 left-0 object-cover"
-          alt="Car wash automation background"
-          src=""
-        />
-
-        {/* Navigation bar */}
-        <header className="flex w-full h-[70px] items-center justify-between px-16 py-8 fixed top-0 left-0 bg-[#1d1d1d08] backdrop-blur-[6px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(6px)_brightness(100%)] z-10">
-          {/* Logo */}
-          <div className="relative w-[122.83px] h-[41px]">
-            <h1 className="text-2xl font-bold">3PH</h1>
+<body class="body">
+  <div class="navbar">
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-center-container shadow-three w-nav">
+      <div class="container-2">
+        <div class="navbar-wrapper-three">
+          <a href="#" class="navbar-brand-three w-nav-brand"><img src="images/3ph-logo.png" loading="lazy" alt=""></a>
+          <nav role="navigation" class="nav-menu-wrapper-three w-nav-menu">
+            <div class="nav-menu-three">
+              <ul role="list" class="nav-menu-block w-list-unstyled">
+                <li>
+                  <div data-hover="false" data-delay="0" class="nav-dropdown w-dropdown">
+                    <div class="nav-dropdown-toggle w-dropdown-toggle">
+                      <div class="nav-dropdown-icon w-icon-dropdown-toggle"></div>
+                      <div>加盟合作</div>
+                    </div>
+                    <nav class="nav-dropdown-list shadow-three mobile-shadow-hide w-dropdown-list">
+                      <a href="/untitled" class="nav-dropdown-link w-dropdown-link">為什麼選擇我們</a>
+                      <a href="#" class="nav-dropdown-link w-dropdown-link">合作與方案</a>
+                    </nav>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="nav-link">關於我們</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link">技術與設備</a>
+                </li>
+              </ul>
+              <ul role="list" class="nav-menu-block w-list-unstyled">
+                <li>
+                  <a href="#" class="nav-link-accent">最新消息與部落格</a>
+                </li>
+                <li class="mobile-margin-top-10">
+                  <a href="#" class="button-primary w-button">聯絡我們</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="menu-button w-nav-button">
+            <div class="w-icon-nav-menu"></div>
           </div>
-
-          {/* Navigation items */}
-          <div className="flex items-center gap-8">
-            <NavigationMenu>
-              <NavigationMenuList className="flex gap-[90px]">
-                {navItems.map((item, index) => (
-                  <NavigationMenuItem key={index}>
-                    <NavigationMenuLink
-                      href={item.href}
-                      className="text-[#1d1d1d] text-[length:var(--label-font-size)] font-label font-[number:var(--label-font-weight)] tracking-[var(--label-letter-spacing)] leading-[var(--label-line-height)] [font-style:var(--label-font-style)]"
-                    >
-                      {item.text}
-                    </NavigationMenuLink>
-                  </NavigationMenuItem>
-                ))}
-              </NavigationMenuList>
-            </NavigationMenu>
-
-            {/* Contact us button */}
-            <Button
-              variant="default"
-              className="bg-[#1d1d1d] text-white rounded-lg shadow-[0px_4px_12px_#00000033] text-[length:var(--button-font-size)] font-button font-[number:var(--button-font-weight)] tracking-[var(--button-letter-spacing)] leading-[var(--button-line-height)] [font-style:var(--button-font-style)]"
-            >
-              聯絡我們
-            </Button>
-          </div>
-        </header>
-
-        {/* Hero content */}
-        <div className="absolute bottom-32 left-12 text-white">
-          <h2 className="text-4xl font-bold mb-4">
-            洗車產業新時代：數位與自動化的崛起
-          </h2>
-          <p className="max-w-2xl text-lg">
-            隨著人力成本上升、消費者對高效洗車的需求增加、但統洗車模式正面臨挑戰。自動化與數字化成為市場主流趨勢，洗車業者需要透過設備升級與數位化管理來提升競爭力。
-          </p>
         </div>
       </div>
     </div>
-  );
-}
+  </div>
+  <div class="cf-hero-section-5">
+    <div class="cf-hero-section-5---heading-wrapper">
+      <h1 data-w-id="84efd2eb-9153-b0c5-d79d-f0651aeb826f" style="opacity:0" class="cf-82px-heading">DIGITALIZATION<br>AND<br>AUTOMATION</h1>
+      <p data-w-id="dc93386c-a991-2da1-a930-a544237cdfa9" style="opacity:0" class="paragraph-2">創造全新商業模式的機會，透過科技與市場策略，與共同打造未來車輛清潔管理的最佳方案。</p>
+    </div>
+    <div data-w-id="84efd2eb-9153-b0c5-d79d-f0651aeb8271" class="cf-parallax-image-contain"><img src="images/Image-min.png" loading="eager" alt="" class="cf-parallax-image-1"><img src="images/Image-3.png" loading="eager" alt="" class="cf-parallax-image-2"><img src="images/Image-5-min.png" loading="eager" alt="" class="cf-parallax-image-3"><img src="images/Image-4-min.png" loading="eager" alt="" class="cf-parallax-image-4"><img src="images/path28.svg" loading="lazy" alt="" class="cf-parallax-scribble-1"><img src="images/Group-380.svg" loading="lazy" alt="" class="cf-parallax-scribble-2"></div>
+  </div>
+  <div class="brix---section">
+    <div class="brix---container-default w-container">
+      <div class="brix---mg-bottom-48px">
+        <div data-w-id="e39063ec-7373-ae0e-1e99-20253a5d76c2" style="-webkit-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="brix---inner-container-600px---center">
+          <div class="brix---text-center">
+            <div class="brix---mg-bottom-12px">
+              <div class="brix---color-neutral-800">
+                <h2 class="brix---heading-h2-size"><strong class="bold-text">洗車產業新時代<br>數位與自動化的崛起</strong></h2>
+              </div>
+            </div>
+            <div class="brix---color-neutral-600">
+              <p class="brix---paragraph-default">隨著人力成本上升、消費者對高效洗車的需求增加，傳統洗車模式正面臨挑戰。自動化與智慧化成為市場主流趨勢，洗車業者需要透過設備升級與數位化管理來提升競爭力。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-w-id="e39063ec-7373-ae0e-1e99-20253a5d76cb" style="-webkit-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="w-layout-grid brix---grid-3-columns">
+        <div class="brix---card-content-center">
+          <div class="brix---mg-bottom-24px"><img src="images/img.icons8.com.png" alt="" class="brix---square-icon"></div>
+          <div class="brix---color-neutral-800">
+            <h3 class="brix---heading-h3-size">人力短缺問題嚴重</h3>
+          </div>
+          <div class="brix---paragraph-default">
+            <div class="brix---color-neutral-600">
+              <p class="brix---mg-bottom-0">洗車行業的招工困難與高流動率，讓業者無法穩定提供服務。</p>
+            </div>
+          </div>
+        </div>
+        <div class="brix---card-content-center">
+          <div class="brix---mg-bottom-24px"><img src="images/img.icons8.com-5.png" alt="" class="brix---square-icon"></div>
+          <div class="brix---color-neutral-800">
+            <h3 class="brix---heading-h3-size">對效率與品質要求提高</h3>
+          </div>
+          <div class="brix---paragraph-default">
+            <div class="brix---color-neutral-600">
+              <p class="brix---mg-bottom-0">現代車主希望獲得快速、標準化的洗車體驗。</p>
+            </div>
+          </div>
+        </div>
+        <div class="brix---card-content-center">
+          <div class="brix---mg-bottom-24px"><img src="images/img.icons8.com-2.png" alt="" class="brix---square-icon"></div>
+          <div class="brix---color-neutral-800">
+            <h3 class="brix---heading-h3-size">數位支付與會員制興起</h3>
+          </div>
+          <div class="brix---paragraph-default">
+            <div class="brix---color-neutral-600">
+              <p class="brix---mg-bottom-0">透過數據分析、會員積分，提升用戶黏著度與回訪率。</p>
+            </div>
+          </div>
+        </div>
+        <div class="brix---card-content-center">
+          <div class="brix---mg-bottom-24px"><img src="images/img.icons8.com-4.png" alt="" class="brix---square-icon"></div>
+          <div class="brix---color-neutral-800">
+            <h3 class="brix---heading-h3-size">永續經營與環保法規</h3>
+          </div>
+          <div class="brix---paragraph-default">
+            <div class="brix---color-neutral-600">
+              <p class="brix---mg-bottom-0">節能減排、自動化水資源管理將成為市場必須因應的方向。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=67f5de4180cee70c2dae0cc0" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+</body>
